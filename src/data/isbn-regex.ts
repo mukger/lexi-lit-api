@@ -1,0 +1,1 @@
+export const IsbnRegex = /^(?=(?:\D*\d){10}(?:(?:\D*\d){3})?$)[\d-]+$/
