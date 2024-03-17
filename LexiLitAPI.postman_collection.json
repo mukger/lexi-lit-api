@@ -1,0 +1,547 @@
+{
+	"info": {
+		"_postman_id": "5d3e1000-0594-4e20-99e0-d83b862cf753",
+		"name": "LexiLitAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23287982"
+	},
+	"item": [
+		{
+			"name": "Sign In",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": ""
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "loginOrEmail",
+							"value": "sahara",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Raha222@k",
+							"type": "text"
+						},
+						{
+							"key": "reminder pass for the rest",
+							"value": "1@gvSdlcvp9",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "reminder pass for the sahara",
+							"value": "Raha222@k",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "http://localhost:3001/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "login",
+							"value": "shisp",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "safshgdfscvbagamdayuin@gmail.ua",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1@gvSdlcvp9",
+							"type": "text"
+						},
+						{
+							"key": "nativeLanguage",
+							"value": "Hausa",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Get profile info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InNhaGFyYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA5NjUzNzQyLCJleHAiOjE3MDk3NDAxNDJ9.iCC3X-93YDIZymj8VNYO6iAjdab10MR2peMaPDGvHOA"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/auth/profile"
+			},
+			"response": []
+		},
+		{
+			"name": "Add book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InNhaGFyYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA5MTU4OTgwLCJleHAiOjE3MDkyNDUzODB9.gbm0tSN3y1DaCNlwHgLZyEzmZqw-3PgoVIYv4PkI5zU"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "asdasd",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "asdasd",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "taskStatus",
+							"value": "DONE",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "loginOrEmail",
+							"value": "mukger",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "1@fTslvcmk24",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "1113assddasdasd@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "nativeLanguage",
+							"value": "Afar",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "login",
+							"value": "mukger",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "isbn",
+							"value": "6585434567999",
+							"type": "text"
+						},
+						{
+							"key": "bookFile",
+							"value": "https://www.cvbore4xcvcvbcvvbnbdvc554fdsfdsilly.com/library/view/regulсмиar-expressions-cookbook/9781449327453/ch04s13.htmlxcv",
+							"type": "text"
+						},
+						{
+							"key": "languageId",
+							"value": "e34fd1bb-c485-44b3-98c8-310dcf06322d",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/books"
+			},
+			"response": []
+		},
+		{
+			"name": "Get current user books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InNhaGFyYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA5NjUzNzQyLCJleHAiOjE3MDk3NDAxNDJ9.iCC3X-93YDIZymj8VNYO6iAjdab10MR2peMaPDGvHOA"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/books"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all visible books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6Im11a2dlciIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA4OTczMDI5LCJleHAiOjE3MDkwNTk0Mjl9.GQpsivo_5Gt72A4_JDibX7Sz-k-6XppgiVzrZdTdaRk"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/books/all"
+			},
+			"response": []
+		},
+		{
+			"name": "Change book info (for users)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6Im11a2dlcmFzc3NzdmJjIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDkxMzM5NDUsImV4cCI6MTcwOTIyMDM0NX0.kl8OwfJVEZHa3LS9wl4_uM8RHgdidCvxCy9cXcFCFWs"
+					}
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "isbn",
+							"value": "1233455678699",
+							"type": "text"
+						},
+						{
+							"key": "bookFile",
+							"value": "sadadscxxvcbcbvgfdcvbcvbcvbcvb",
+							"type": "text"
+						},
+						{
+							"key": "isVisible",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/books/0b1b0638-d74e-4b59-aa8be110871"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete book (for users)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6Im11a2dlcmFzc3NzdmJjIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDkxMzg4NjMsImV4cCI6MTcwOTIyNTI2M30.-n0GkDsaGfekP9rtgNThbjKxik_9S0RI7vHKaIWjI7A"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/books/35c1ff5f-20cc-4e9f-978b-7fde161532b2"
+			},
+			"response": []
+		},
+		{
+			"name": "Add language (owner)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6Im11a2dlciIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA5MDUwNDA2LCJleHAiOjE3MDkxMzY4MDZ9.K6xwSIzl8_EZmhVLd3W4fJN5g5PpZzTugM9zew3hKT0"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "languageCode",
+							"value": "en",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/languages"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete language (owner)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6Im11a2dlciIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA4OTczMDI5LCJleHAiOjE3MDkwNTk0Mjl9.GQpsivo_5Gt72A4_JDibX7Sz-k-6XppgiVzrZdTdaRk"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": "http://localhost:3000/languages/12223088-1e18-4ffb-9176-946b13c1e2dd"
+			},
+			"response": []
+		},
+		{
+			"name": "Get friends",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6Im11a2dlcmFzc3NzIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDkyMTExNTUsImV4cCI6MTcwOTI5NzU1NX0.0IPlanbMmYq28ZCn0UbFO_0HA4tCWHg-fPPpqvvI7oU"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/friends"
+			},
+			"response": []
+		},
+		{
+			"name": "Get friend invites",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6Im11a2dlcmFzc3NzIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDkyMTExNTUsImV4cCI6MTcwOTI5NzU1NX0.0IPlanbMmYq28ZCn0UbFO_0HA4tCWHg-fPPpqvvI7oU"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/friends/invites"
+			},
+			"response": []
+		},
+		{
+			"name": "Get friends requests",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6Im11a2dlcmFzc3NzIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDkyMTExNTUsImV4cCI6MTcwOTI5NzU1NX0.0IPlanbMmYq28ZCn0UbFO_0HA4tCWHg-fPPpqvvI7oU"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/friends/requests"
+			},
+			"response": []
+		},
+		{
+			"name": "Invite user to friends",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InNoaXNwIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDkyMTUzNjMsImV4cCI6MTcwOTMwMTc2M30.3-czavL1ggIGrGNrYZ6G5HEYQB3UPEACOM_iT4Ppvig"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": "http://localhost:3000/friends/invite/bd1081a2-1f18-430a-878f-bd1073b32cbf"
+			},
+			"response": []
+		},
+		{
+			"name": "Accept friend invitation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6Im11a2dlcmFzc3NzIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDkyMTExNTUsImV4cCI6MTcwOTI5NzU1NX0.0IPlanbMmYq28ZCn0UbFO_0HA4tCWHg-fPPpqvvI7oU"
+					}
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": "http://localhost:3000/friends/accept/d0b8355c-b3a9-4393-89f9-8e9287663162"
+			},
+			"response": []
+		},
+		{
+			"name": "View friend invitation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6Im11a2dlcmFzc3NzdmJjIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDkxMzg4NjMsImV4cCI6MTcwOTIyNTI2M30.-n0GkDsaGfekP9rtgNThbjKxik_9S0RI7vHKaIWjI7A"
+					}
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": "http://localhost:3000/friends/accept/92f3fd01-183e-4250-8529-5e8067dbbd94"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete friend",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InNhaGFyYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA5MTU3MDc0LCJleHAiOjE3MDkyNDM0NzR9.qoG923KI3J4WLbaEHwHeVM44xg3B5Xuiiny_jWEbcKw"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/friends/c59b7891-da9f-4fc7-8e7b-3dec082003a0"
+			},
+			"response": []
+		},
+		{
+			"name": "Reject friend invitation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6Im11a2dlcmFzc3NzIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDkyMTc0MzAsImV4cCI6MTcwOTMwMzgzMH0.lasAbGayuvPPAyyLQbNK5j4sDkXBse_GI4WUyiV327g"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/friends/requests/92f3fd01-183e-4250-8529-5e8067dbbd94"
+			},
+			"response": []
+		},
+		{
+			"name": "Get learned words",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InNhaGFyYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA5NDY3MTc0LCJleHAiOjE3MDk1NTM1NzR9.0A7cDElJ0sNS6j5QFungF3s8RWgQBZDSI4GEf2WzCG8"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": "http://localhost:3000/learned-words"
+			},
+			"response": []
+		},
+		{
+			"name": "Get learned word by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InNhaGFyYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA5NDY3MTc0LCJleHAiOjE3MDk1NTM1NzR9.0A7cDElJ0sNS6j5QFungF3s8RWgQBZDSI4GEf2WzCG8"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/learned-words/0f137263-5af5-4f4c-bae7-c623679bd556"
+			},
+			"response": []
+		},
+		{
+			"name": "Add learned word",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InNhaGFyYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA5NDY3MTc0LCJleHAiOjE3MDk1NTM1NzR9.0A7cDElJ0sNS6j5QFungF3s8RWgQBZDSI4GEf2WzCG8"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "bookId",
+							"value": "6692240c-f472-40e3-b3c5-af98b4750155",
+							"type": "text"
+						},
+						{
+							"key": "word",
+							"value": "apple",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/learned-words"
+			},
+			"response": []
+		},
+		{
+			"name": "Check learned word",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InNhaGFyYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA5NDc5NTMzLCJleHAiOjE3MDk1NjU5MzN9.7keA7NDUusBC_zT8Y_dKxiIqGtIQE088JipnmoGr4tw"
+					}
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/learned-words/answer/0f137263-5af5-4f4c-bae7-c623679bd556?right=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"learned-words",
+						"answer",
+						"0f137263-5af5-4f4c-bae7-c623679bd556"
+					],
+					"query": [
+						{
+							"key": "right",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete learned word by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InNhaGFyYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA5NDY3MTc0LCJleHAiOjE3MDk1NTM1NzR9.0A7cDElJ0sNS6j5QFungF3s8RWgQBZDSI4GEf2WzCG8"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/learned-words/01ec8898-4ece-420f-89e7-7024341261a5"
+			},
+			"response": []
+		}
+	]
+}
