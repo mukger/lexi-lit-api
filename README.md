@@ -34,16 +34,10 @@ $ yarn install
 
 ## Running the app
 
-```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
-```
+To run project you can just do following steps:
+1. Run PostgreSQL on declared in .env file port (for example using docker https://hub.docker.com/_/postgres).
+2. Run npm start:dev or yarn start:dev and follow instructions to setting some .env files with important environment variables.
+3. Now you need to open Postman (https://www.postman.com/) and download LexiLitAPI.postman_collection file into that you can find in current repository.
 
 ## Test
 
